@@ -5,30 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendari d'Advent 2024</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
     <div id="landing-page">
         <h1>Benvinguda al teu calendari d'advent 2024!</h1>
-        <p>Cada dia trobaràs una petita sorpresa!</p>
-        <button id="start-button">Comencem!</button>
-        <div id="youtube-player" style="margin-top: 20px;"></div>
+        <p>Cada dia trobaràs una petita sorpresa en forma de cançó, acompañada d'una foto, a vegades random i a vegades no!</p>
+        <button class="christmas-but"  id="start-button">Comencem!</button>
     </div>
 
 
     <div id="calendar-page" style="display: none;"  >
-        <h1>Your Advent Surprises Await!</h1>
+        <h1>Escull un dia per veure que amaga!</h1>
         <div class="calendar-grid"></div>
     </div>
-
+    
     <div id="present-page" style="display: none;">
-        <div class="day-image"></div>
+        <img class="day-image" src="" alt="">
         <div class="day-info">
             <h2 id="day-title">Regal X del dia X</h2>
             <p id="day-text">Avui et presento el regal javjh aijasd kask djfd e duia uafd du isuuu vianj, asudfus asd du,s lreom ipsum al re uaewa.</p>
+            <div id="youtube-player" style="margin-top: 20px;"></div>
         </div>
-        
+        <button class="christmas-but" id="back-button">Tornar</button>
     </div>
 
     <script src="https://www.youtube.com/iframe_api"></script>

@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center;
+    font-family: "Montserrat", serif;
 }
 
 #landing-page,
@@ -20,8 +21,9 @@ body {
 
 #present-page{
     display: flex;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: start;
+    gap: 50px;
+    min-width: 1000px;
     padding: 50px;
     border: 1px solid black;
     text-align: start;
@@ -30,16 +32,16 @@ body {
 }
 
 .day-image{
-    background-color: grey;
-    width: 300px;
+    display: block;
+    object-fit: cover;
+    width: 100%;
     height: 500px;
-    
 }
 
 .day-info{
     display: flex;
     flex-direction: column;
-    width: 550px;
+    width: 570px;
 }
 
 .hidden{
@@ -73,5 +75,68 @@ body {
 }
 .day.opened {
     background: #a2e5a2;
-    text-decoration: line-through;
+}
+
+.day.opened:hover{
+    transform: scale(1.1);
+}
+
+.christmas-but {
+	display: inline-block;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+	min-width:75px;
+	padding: 22px 33px;
+	font-size: 26px;
+	line-height: 26px;
+	text-decoration: none;
+	color: #FFF;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+	background: #5e0d0c;
+	outline: none;
+	border-radius: 15px;
+	border: 1px solid #4c0300;
+	box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
+		inset 0 0 6px #a23227, /* inner glow */
+		inset 0 80px 80px -40px #ac3223, /* gradient */
+		1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+		
+	position: relative;
+	overflow: visible; /* IE9 & 10 */
+	-webkit-transition: 500ms linear;
+	   -moz-transition: 500ms linear;
+	     -o-transition: 500ms linear;
+					transition: 500ms linear;
+}
+
+.christmas-but:hover {
+	background: #a61715;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.75), 0 0 40px #FFF;
+	box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
+		inset 0 0 6px #da3b2c, /* inner glow */
+		inset 0 80px 80px -40px #dd4330, /* gradient */
+		1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+		
+}
+
+.christmas-but:active {
+	box-shadow:
+		inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
+		inset 0 0 6px #da3b2c, /* inner glow */
+		inset 0 80px 80px -40px #dd4330, /* gradient */
+		0px 1px 0px rgba(255,255,255,0.25); /* shadow */
+		
+	-webkit-transition: 50ms linear;
+	   -moz-transition: 50ms linear;
+	     -o-transition: 50ms linear;
+	        transition: 50ms linear;
+}
+
+#back-button{
+    height: 50px;
+    font-size: 20px;
+    padding: 0;
 }
