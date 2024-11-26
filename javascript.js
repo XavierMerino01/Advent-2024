@@ -12,8 +12,9 @@ class Day{
 let calendarDays = [];
 
 document.addEventListener('DOMContentLoaded', function () {
-    //const today = new Date().getDate();
-    const today = 12;
+    const today = new Date().getDate();
+    const currentMonth = new Date().getMonth();
+    const DECEMBER = 11;
     const calendar = document.querySelector('.calendar-grid');
     const landingDiv = document.querySelector('#landing-page');
     const calendarDiv = document.querySelector('#calendar-page');
@@ -28,7 +29,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         calendarDays[i-1] = CreateAndAssingDayData(i);
 
-        if (i > today) {
+        if (currentMonth !== DECEMBER) {
+            // If it's not December, all days are locked
+            dayElement.classList.add('locked');
+            dayElement.addEventListener('click', () => {
+                alert("Aquest calendari només està disponible al desembre!");
+            });
+        } else if (i > today) {
             // Days in the future are locked
             dayElement.classList.add('locked');
             dayElement.addEventListener('click', () => {
