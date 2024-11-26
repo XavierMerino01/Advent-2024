@@ -13,7 +13,7 @@ let calendarDays = [];
 
 document.addEventListener('DOMContentLoaded', function () {
     //const today = new Date().getDate();
-    const today = 30;
+    const today = 12;
     const calendar = document.querySelector('.calendar-grid');
     const landingDiv = document.querySelector('#landing-page');
     const calendarDiv = document.querySelector('#calendar-page');
@@ -223,22 +223,22 @@ const dayData = [
         source : '36kJqctKaSY'
     },
     {day : "18",
-        title : "Empty",
-        description : "Empty",
+        title : "Zarcillos de plata | Judeline",
+        description : "Descobriment recent (no se si la coneixies ja), temarral casi tant bonic com tu. Si t'agrada aquesta, tot el seu últim disc és una joia.",
         image : "./images/fotodia18.jpeg",
-        source : 'pQ791J7N068'
+        source : 'CEc4uljjbwY'
     },
     {day : "19",
-        title : "Empty",
-        description : "Empty",
+        title : "Estic conteent",
+        description : "Ja casi acabem la setmana i també ja casi arribeeeem al final del calendari!!! Alegria pal cuerpooo, molts ànimsssss",
         image : "./images/fotodia19.jpeg",
-        source : ''
+        source : '3LSA4xXWcUM'
     },
     {day : "20",
-        title : "Empty",
-        description : "Empty",
+        title : "Debate serio",
+        description : "Com es pot ser tan bonica amb una gerra de litre de cervesa a la mà? Per acabar la setmana et poso una versió d'aquesta nadala a la que em recorda el teu somriure jeje ",
         image : "./images/fotodia20.jpeg",
-        source : ''
+        source : '3ViDtcWxHwA'
     },
     {day : "21",
         title : "Barça vs Patético",
@@ -247,21 +247,21 @@ const dayData = [
         source : 'PBBnqpfJLyM'
     },
     {day : "22",
-        title : "Empty",
-        description : "Empty",
-        image : "./images/fotodia22.jpeg",
-        source : ''
-    },
+        title : "luther",
+        description : "Potser a aquestes altures ja la tens cremada, però no podia no posar-la i a més amb aquesta foto GOOOOOOD. T'estimooo!!!",
+        image : "./images/fotodia22.png",
+        source : 'HfWLgELllZs'
+    }, 
     {day : "23",
-        title : "Empty",
-        description : "Empty",
+        title : "Mi cara cuando",
+        description : "Mi cara cuando veo tu tremendo culamen... Dale duro a l'últim dilluns abans de Nadal! Que vagi molt bé el diaaa <3",
         image : "./images/fotodia23.jpeg",
-        source : ''
+        source : 'U19TQhm4dyM'
     },
     {day : "24",
-        title : "S'acabo :(",
-        description : "Arribem a l'últim dia! Espero que hagis gaudit d'aquest petit obsequi que he fet amb tot el carinyo del món! T'estimo moltíssim i m'encanta compartir coses noves amb tu <3 ",
+        title : "Bon Nadal!",
+        description : "Arribem a l'últim dia! Espero que hagis gaudit d'aquest petit obsequi que he fet amb tot el carinyo del món! T'estimo moltíssim i m'encanta compartir coses noves amb tu <3",
         image : "./images/fotodia24.jpeg",
-        source : 'na0-YIOTm-U'
+        source : 'STnpL1COEyI'
     },
 ]

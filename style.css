@@ -1,12 +1,17 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom,rgb(0, 202, 0),  rgb(250, 32, 32));
-    text-align: center;
-    padding: 20px;
-    height: 100vh;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
     display: flex;
     justify-content: center; 
     align-items: center;
+    text-align: center;
     font-family: "Montserrat", serif;
 }
 
@@ -17,7 +22,18 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
+    color: #EBCF96;
 }
+
+h1,
+#landing-page > p{
+    text-shadow: 
+        2px 2px 2px black,  /* Shadow to the bottom-right */
+       -2px 2px 2px black,  /* Shadow to the bottom-left */
+        2px -2px 2px black, /* Shadow to the top-right */
+       -2px -2px 2px black;
+}
+
 
 #present-page{
     display: flex;
@@ -27,7 +43,7 @@ body {
     padding: 50px;
     border: 1px solid black;
     text-align: start;
-    background-color: aquamarine;
+    background-color: #EBCF96;
     border-radius: 7px;
 }
 
@@ -58,7 +74,8 @@ body {
 .day {
     padding: 20px;
     background: #eee;
-    border: 2px solid #ccc;
+    color: #18050E;
+    border: 2px solid #18050E;
     border-radius: 10px;
     font-size: 1.5em;
     cursor: pointer;
@@ -71,10 +88,10 @@ body {
 }
 .day.unlocked:hover {
     transform: scale(1.1);
-    background: #ffd700;
+    background: #67B424;
 }
 .day.opened {
-    background: #a2e5a2;
+    background: #EBCF96;
 }
 
 .day.opened:hover{
@@ -133,6 +150,10 @@ body {
 	   -moz-transition: 50ms linear;
 	     -o-transition: 50ms linear;
 	        transition: 50ms linear;
+}
+
+#start-button{
+    margin-top: 20px;
 }
 
 #back-button{
