@@ -128,8 +128,8 @@ function CreateAndAssingDayData(dayNum){
 
 const dayData = [
     {day : "1",
-        title : "It's begining to...",
-        description : "Per començar el mes no se m'ha ocorregut millor idea que aquest temón. Literalment és arribar a l'1 de desembre i tot comença a fer olor de Nadal. Espero que t'agradi <3",
+        title: "JA HI TORNEM A SER!!!",
+        description : " Com no podia ser d'altre manera, aquí tens el teu calendari d'advent fet amb molt d'amor. Perdó per repetir pero hem de començar amb la millor cançó de Nadal. Espero que t'agradi <3",
         image : "./images/fotodia1.jpeg",
         source : 'QJ5DOWPGxwg',
     },
