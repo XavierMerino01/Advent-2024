@@ -14,7 +14,7 @@ let calendarDays = [];
 document.addEventListener('DOMContentLoaded', function () {
     const today = new Date().getDate();
     const currentMonth = new Date().getMonth();
-    const DECEMBER = 11;
+    const DECEMBER = 10;
     const calendar = document.querySelector('.calendar-grid');
     const landingDiv = document.querySelector('#landing-page');
     const calendarDiv = document.querySelector('#calendar-page');
@@ -134,40 +134,40 @@ const dayData = [
         source : 'QJ5DOWPGxwg',
     },
     {day : "2",
-        title : "Primer dilluns del mes!",
-        description : "Seguim i comencem la setmana amb una cosa una mica més catalana, ànims i escalf que ja ho teenss! Per ajudar-te amb els dilluns et posaré una foto del tete :P",
+        title : "Seguiiiim!",
+        description : "Dimarts dia 2! Actualment estic absolutament enganxat a aixó xddd, si no et convenç pots escoltar-te l'álbum de 'Nadal Mix 2023' que segur que alguna t'agradaaa!",
         image : "./images/fotodia2.jpeg",
-        source : 'YlWMGfY7b34',
+        source : 'G4Y1XL_sqT0',
     },
     {day : "3",
-        title : "Llença't!",
-        description : "Dia de Sant Francesc Xavier (jeje), canviem una mica de tema que ho cremarem abans d'hora! Per seguir la setmana, tremendo tema de Lax'n'Busto.",
+        title : "Sant ??????",
+        description : "M'han dit que aquest tema esta prou bé, a mi no m'acaba de convèncer però bueno, per variar una mica! detrasdetiiiiiiiiiivoooooy    PD: Pots ampliar la pagina per llegir tremendos factos del cotxe jajajajjajaj",
         image : "./images/fotodia3.jpeg",
-        source : 'GY7JWIIHtlQ'
+        source : 'fLmQbJ4SDTA'
     },
     {day : "4",
-        title : "MARTTEIN - EL RUBIO",
-        description : "Una mica per la puta cara, pero com que és el meu calendari, poso el que vull jeje. Tema bizarro perque descobreixis coses noves (videoclip raro de cojones també)",
+        title : "Las minitas",
+        description : "Fotiki amb les panas i temazooo per acompanyar. GAAASSS que ja es dijoousss :)",
         image : "./images/fotodia4.jpeg",
-        source : 'A89J1BnTBfg'
+        source : 'vz_vU53JvvI'
     },
     {day : "5",
-        title : "La Cabra",
-        description : "Cal que digui res? Jo crec que no, simplement disfruta. Ja em donaràs les gràcies.",
+        title : "Nerviiitsss??!??!",
+        description : "Tornem al Nadal i recuperem una mica la vibra perque s'acosten uns dies... BOOOOOOFFF!!!! Fotliii dur al divendres que ja ho teniim",
         image : "./images/fotodia5.jpeg",
-        source : 'cF1Na4AIecM'
+        source : '4EvZOXEoJ84'
     },
     {day : "6",
-        title : "Som-hi(?)",
-        description : "Estarem marxant a algun lloc? Mmmm, espero que si i que ho escoltem junts <3 (Si no es aixi almenys gaudeix fent alguna cosa xula jeje)",
+        title : "LET'S GOOOO!",
+        description : "Are we nervous honey? On our way to fucking London!!!! LOVE YOUUUU",
         image : "./images/fotodia6.jpeg",
-        source : 'qugVVyNL0Oc'
+        source : 'XqLTe8h0-jo'
     },
     {day : "7",
-        title : "Christmas is All Around",
-        description : "Reconeixes d'on és aquesta cançó? Si ho encertes et convido al que vulguis :P (PD: Repetimos?)",
+        title : "Here we are TOOOMAA",
+        description : "Let's speak English for our time here jeje, I LOVE when you sing this song, can i get a taste? Also, AMAZING night yesterday thanks a lot for everything <3",
         image : "./images/fotodia7.jpeg",
-        source : 't_KI-mRyE_0'
+        source : 'gset79KMmt0'
     },
     {day : "8",
         title : "Sultans Of Swing",
