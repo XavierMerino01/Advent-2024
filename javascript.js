@@ -14,7 +14,7 @@ let calendarDays = [];
 document.addEventListener('DOMContentLoaded', function () {
     const today = new Date().getDate();
     const currentMonth = new Date().getMonth();
-    const DECEMBER = 10;
+    const DECEMBER = 11;
     const calendar = document.querySelector('.calendar-grid');
     const landingDiv = document.querySelector('#landing-page');
     const calendarDiv = document.querySelector('#calendar-page');
@@ -30,23 +30,19 @@ document.addEventListener('DOMContentLoaded', function () {
         calendarDays[i-1] = CreateAndAssingDayData(i);
 
         if (currentMonth !== DECEMBER) {
-            // If it's not December, all days are locked
             dayElement.classList.add('locked');
             dayElement.addEventListener('click', () => {
                 alert("Aquest calendari només està disponible al desembre!");
             });
         } else if (i > today) {
-            // Days in the future are locked
             dayElement.classList.add('locked');
             dayElement.addEventListener('click', () => {
                 alert("Eeepaaa on vaaas? T'haurás d'esperar :P")
             });
         } else if (i === today) {
-            // Today is unlocked but not opened
             dayElement.classList.add('unlocked');
             dayElement.addEventListener('click', () => openDay(i));
         } else {
-            // Past days are opened
             dayElement.classList.add('opened');
             dayElement.addEventListener('click', () => openDay(i));
         }
@@ -71,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
 let ytPlayer;
 
 function onYouTubeIframeAPIReady() {
-    // Initialize the YouTube player in the placeholder div
     ytPlayer = new YT.Player('youtube-player', {
         height: '315', // Height of the player
         width: '560',  // Width of the player
@@ -170,105 +165,105 @@ const dayData = [
         source : 'gset79KMmt0'
     },
     {day : "8",
-        title : "Sultans Of Swing",
-        description : "De nou, espero que puguem escoltar-la junts a la carretera tornant cap a casa, i si no és aixi, que pensis en la ruteta que vam tenir fins a Toulouse! (Fotos incloses...)",
+        title : "Surprise surpriseeee",
+        description : "To celebrate one of the best surprises I've ever recieved! What a concert jeje. Hope you enjoy whatever we are doing today, it's not gonna be as amazing as the picture but we will be fine, I promise :P",
         image : "./images/fotodia8.jpeg",
-        source : '0fAQhSRLQnM'
+        source : 'G5YwhjCywvw'
     },
     {day : "9",
-        title : "Gas Gas Gaaass",
-        description : "Aqui et deixo al teu colegon jeje, i a part un combo musical un tant estrany per donar-te forces!",
+        title : "CYA Soon London :/",
+        description : "Back to reality... but hey, we have Christmas to look forward to! Let's enjoy this freakin bangeeer",
         image : "./images/fotodia9.jpeg",
-        source : 'EzU0ofo3jOs',
+        source : 'yqrAPOZxgzU',
     },
     {day : "10",
-        title : "Ghost Town ",
-        description : "Aquesta foto nostra m'ha recordat a la tremenda portada d'aquest álbum (casi xavier, casi). Segur que l'has escoltat mil cops, però una vegada més no pot fer mal.",
+        title : "MA TA TE IU",
+        description : "Tornem a la rutina :( estic segur que ha set un viatge increïble i amb ganes del seguent jaaaaa... La cançó no te res a veure pero m'encanta i espero que t'animi la rutina",
         image : "./images/fotodia10.jpeg",
-        source : 'qAsHVwl-MU4'
+        source : 'zOdKS_ayMyM'
     },
     {day : "11",
-        title : "Som-hi BARÇA!",
-        description : "És dia de partit i el cos ho sap! Olele, Olala!!!",
+        title : "Oleee la mamii",
+        description : "Per acompanyar un tema que em fa pensar molt en la teva mare (I que li encanta a la meva). Quan estava el viena em va mencionar el poema que es menciona en la cançó: Caminante no hay camino, se hace camino al andar...",
         image : "./images/fotodia11.jpeg",
-        source : 'pQ791J7N068'
+        source : '8tHLw8FHlCE'
     },
     {day : "12",
-        title : "A-Punk",
-        description : "De nou descobrint cremita per a tu. Si et mola el grup en te varies de goooood. Aixi com a dato, me'ls va descobrir en Marià, altres coses no pero coneixement musical en té un rato el tio.",
+        title : "Escapi qui escapi",
+        description : "Gràcies per compartir aquests moments amb els meus amiicsss, tant de bo no sigui la última ni la penúltima que fem cosetes aixi. La cançó nose si t'agrada gaire pero a mi s'em posa dins les tres neurones que em queden i no paroooo....",
         image : "./images/fotodia12.jpeg",
-        source : '_XC2mqcMMGQ'
+        source : 'wm8cyg-wgwQ'
     },
     {day : "13",
-        title : "Divieernees",
-        description : "Pura cultura de la partitura, orfebrería de corxeres. Simplement gaudeixi! ",
+        title : "FUUURBOOOO",
+        description : "Dia de partiiit! Tant de bo estem veien-ho juntetssss. BAAAAAARRRRÇA! Temarraaaal per agafar energia! ",
         image : "./images/fotodia13.jpeg",
-        source : 'e74C11fdjak'
+        source : 'TV2U_Nz4oU8'
     },
     {day : "14",
-        title : "BAAAAAAUN",
-        description : "Too faaalling in loooooove... Segur que la tens cremadisima pero no podia faltar, t'estimooooo <3 <3 <3",
+        title : "BOOOOOF",
+        description : "Quin foton, probablement de les meves preferides d'aquest any, i per tant, l'acompanyo amb una de les meves cançons més repetides.",
         image : "./images/fotodia14.jpeg",
-        source : 'wVRF3SqLUi0'
+        source : '8P09rxVaQAM'
     },
     {day : "15",
-        title : "La Marató!",
-        description : "Avui es la Marató de TV3, probablement fa anys que no veig un sol segon del programa, pero tremendos discos que es treuen els màquines. Escoltat alguns fragments a youtube, jo te'n deixo un per aqui :P",
+        title : "El Mago Flop",
+        description : "He decidit que aquesta setmana tocarà una foto familiar diferent cada diaaa. (Són les que he pogut trobar a la galeria) Molts ànimsss que ja queda pooooc de calendari!",
         image : "./images/fotodia15.jpeg",
         source : 'Z5joBD-Ade8'
     },
     {day : "16",
-        title : "Mi cara cuando",
-        description : "Mi cara cuando és dilluns un altre puto cop... Molts besitos i ànimsss!!! Un rap duro con cojones per que condueixis la mala llet que deus portar.",
+        title : "¿¿¿¿¿?????",
+        description : "M'expliques com es pot ser tant bonica siusplau? Whatsapp al 618480816, gràcies. Fotiki amb el patron i tema que crec que et recordara a ell jeje",
         image : "./images/fotodia16.jpeg",
-        source : 'w2sSx6FNz80'
+        source : '7hx4gdlfamo'
     },
     {day : "17",
-        title : "Si morís demà...",
-        description : "Buscaria al pibón que em va descobrir aquesta cançó i li faria mooooooltes cosetes...",
+        title : "La Patrona",
+        description : "Aquest any heu visitat els teatres un tou de cops! I jo algun que altre també de rebot :P Tant de bo un dia poder cuinar la meitat de bé que ella, anda que no et molaria...",
         image : "./images/fotodia17.jpeg",
-        source : '36kJqctKaSY'
+        source : 'v_yoiiABDrM'
     },
     {day : "18",
-        title : "Zarcillos de plata | Judeline",
-        description : "Descobriment recent (no se si la coneixies ja), temarral casi tant bonic com tu. Si t'agrada aquesta, tot el seu últim disc és una joia.",
+        title : "Aventures varies",
+        description : "La foto que he vist amb el teu germà que més gràcia mha fet, espero que a tu també i que la cançó, encara que té poc merit escollirla, la gaudeixis moltíssim un altre cop!",
         image : "./images/fotodia18.jpeg",
-        source : 'CEc4uljjbwY'
+        source : 'wOOY1cLH7F8'
     },
     {day : "19",
-        title : "Estic conteent",
-        description : "Ja casi acabem la setmana i també ja casi arribeeeem al final del calendari!!! Alegria pal cuerpooo, molts ànimsssss",
+        title : "Latin Girls",
+        description : "Una mica per la cara jajjajajajaa pero tenia la foto i mha fet ilu afegirla aqui amb aquesta cançó que a data de fer el calendari no pares de repetiiiiiir",
         image : "./images/fotodia19.jpeg",
-        source : '3LSA4xXWcUM'
+        source : '2V1exaAqx-k'
     },
     {day : "20",
-        title : "Debate serio",
-        description : "Com es pot ser tan bonica amb una gerra de litre de cervesa a la mà? Per acabar la setmana et poso una versió d'aquesta nadala a la que em recorda el teu somriure jeje ",
+        title : "Quin regal :)",
+        description : "No se si té molt sentit, pero aquesta foto m'emociona una barbaritat. Encara que potser no n'ets del tot conscient, sento que mai podré agrair-te prou tot el que fas per mi, i per la meva familia. T'estimo!",
         image : "./images/fotodia20.jpeg",
-        source : '3ViDtcWxHwA'
+        source : 'oZo_6_RbRg8'
     },
     {day : "21",
-        title : "Barça vs Patético",
-        description : "Dia de Partit! Últim partit de l'any contra un equip marrano de pebrots! BAAAAAAR SA! (Que miras xinorri?)",
+        title : "Los chavaaaleee",
+        description : "No hi surt tothooom! Pero m'encantava la foto jajajajajja tremenda experiència viure per fi la festa major amb vosaltrees. Tant de bo repetiir molts anys mes! MÉS FOC!",
         image : "./images/fotodia21.jpeg",
-        source : 'PBBnqpfJLyM'
+        source : 'loL3lDftQ98'
     },
     {day : "22",
-        title : "luther",
-        description : "Potser a aquestes altures ja la tens cremada, però no podia no posar-la i a més amb aquesta foto GOOOOOOD. T'estimooo!!!",
-        image : "./images/fotodia22.png",
-        source : 'HfWLgELllZs'
+        title : "Tic Tac",
+        description : "Ja s'acaba això! Aqui tens una foto amb el coleguita que no podia faltar, segur que et troba a faltar! Rematem-ho amb música de nadal, com toca, que se m'ha anat una mica de les mans la temàtica.",
+        image : "./images/fotodia22.jpeg",
+        source : '5modsEYHaMg'
     }, 
     {day : "23",
-        title : "Mi cara cuando",
-        description : "Mi cara cuando veo tu tremendo culamen... Dale duro a l'últim dilluns abans de Nadal! Que vagi molt bé el diaaa <3",
+        title : "Perque no?",
+        description : "Saco random, tant la foto, però sobretot la cançó, que he trobat per la cara, i no podia no posarles. DISFRUTI!",
         image : "./images/fotodia23.jpeg",
-        source : 'U19TQhm4dyM'
+        source : '35yXRbzf7rE'
     },
     {day : "24",
         title : "Bon Nadal!",
-        description : "Arribem a l'últim dia! Espero que hagis gaudit d'aquest petit obsequi que he fet amb tot el carinyo del món! T'estimo moltíssim i m'encanta compartir coses noves amb tu <3",
+        description : "Hem arribat al final! Espero que hagis gaudit d'aquest petit obsequi que he renovat amb tot el carinyo del món! T'estimo moltíssim i m'encanta poder compartir el Nadal de nou amb tu <3",
         image : "./images/fotodia24.jpeg",
-        source : 'STnpL1COEyI'
+        source : '-FL16hvG4X0'
     },
 ]
